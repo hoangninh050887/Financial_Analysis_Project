@@ -16,3 +16,4 @@ The project is organized as follows:
 - 'Analysis.md': An analysis of each type of financial ratio and the conclusion.
 - 'requirements.txt': Contains the list of dependencies.
 - 1111
+- 1111
