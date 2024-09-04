@@ -32,3 +32,4 @@ current_ratio.caculate1(f_balance_sheet)
 ### Plotting graph
 
 # Summary
+Test
