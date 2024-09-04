@@ -3,22 +3,17 @@ import matplotlib.pyplot as plt
 from scipy.stats import linregress
 import os
 
-class Function:
-
-    def __init__(self, ratio1, element_1, element_2):
-        self.ratio = ratio1
+class Ratio:
+    def __init__(self, ratio, element_1, element_2):
+        self.ratio = ratio
         self.element1 = element_1
         self.element2 = element_2
 
-    # Define function to for calculating ratios which take data from balance sheet only
-    def caculate1(self, data):
-        data[self.ratio] = data[self.element1] / data[self.element2]
-        return data[self.ratio]
-
-    # Define a function for calculating ratios which take data from both balance sheet and income statement
-    def caculate2(self, data1, data2):
-        data1[self.ratio] = data1[self.element1] / data2[self.element2]
-        return data1[self.ratio]
+    def calculate(self, data1, data2=None):
+        if data2 is None:
+            data1[self.ratio] = data1[self.element1] / data1[self.element2]
+        else:
+            data1[self.ratio] = data1[self.element1] / data2[self.element2]
 
     # The function used for drawing the ratio values
     def draw(self, data1, data2):

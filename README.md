@@ -15,5 +15,20 @@ The project is organized as follows:
 - Images: The graph showing the trend of each ratio saved in this directory.
 - 'Analysis.md': An analysis of each type of financial ratio and the conclusion.
 - 'requirements.txt': Contains the list of dependencies.
-- 1111
-- 1111
+
+# Functionalities
+### Calculating Financial Ratio
+Each ratio was calculated by:
+- First, initiate the class `Function`. 
+```commandline
+current_ratio = Function('Current Ratio', 'Current Assets', 'Current Liabilities')
+```
+- Second, call the function `xxx` to calculate the desired ratio
+```commandline
+current_ratio.caculate1(gm_balance_sheet)
+current_ratio.caculate1(f_balance_sheet)
+```
+
+### Plotting graph
+
+# Summary
