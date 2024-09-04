@@ -15,3 +15,4 @@ The project is organized as follows:
 - Images: The graph showing the trend of each ratio saved in this directory.
 - 'Analysis.md': An analysis of each type of financial ratio and the conclusion.
 - 'requirements.txt': Contains the list of dependencies.
+- 1111
