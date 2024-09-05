@@ -17,19 +17,30 @@ The project is organized as follows:
 - 'requirements.txt': Contains the list of dependencies.
 
 # Functionalities
-### Calculating Financial Ratio
-Each ratio was calculated by:
-- First, initiate the class `Function`. 
+- First, initiate the class `Ratio`; this class has three input data including the name of a ratio and two elements 
+for computing it. These data will be used for calculating and drawing by two functions of the `Ratio` class.
 ```commandline
 current_ratio = Function('Current Ratio', 'Current Assets', 'Current Liabilities')
 ```
-- Second, call the function `xxx` to calculate the desired ratio
+### Calculating Financial Ratio
+
+- The function `calculate` is called to calculate the desired ratio. The `calculate` function take the data from the 
+balance sheet or the income statement of each company. In this project each ratio is computed twice, one for General 
+Motors and one for Ford Motors.
+- After calculating, the ratio of each company is added to its balance sheet.
 ```commandline
-current_ratio.caculate1(gm_balance_sheet)
-current_ratio.caculate1(f_balance_sheet)
+current_ratio.caculate(gm_balance_sheet)
+current_ratio.caculate(f_balance_sheet)
 ```
 
 ### Plotting graph
+- The function `draw` is called for plotting the value of each ratio. The `draw` function take data from the balance
+sheet of General Motors and Ford Motors.
+```commandline
+current_ratio.draw(gm_balance_sheet, f_balance_sheet)
+```
+- This is an example of a graph that demonstrates the value of current ratio of both firms:
+![](Images/Current Ratio.png)
 
 # Summary
 Test

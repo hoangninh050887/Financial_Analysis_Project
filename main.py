@@ -21,6 +21,7 @@ f_income_statement.index = f_income_statement.index.year
 current_ratio = Ratio('Current Ratio', 'Current Assets', 'Current Liabilities')
 current_ratio.calculate(gm_balance_sheet)
 current_ratio.calculate(f_balance_sheet)
+current_ratio.draw(gm_balance_sheet, f_balance_sheet)
 
 quick_ratio = Ratio('Quick Ratio', 'Cash And Cash Equivalents', 'Current Liabilities')
 quick_ratio.calculate(gm_balance_sheet)
