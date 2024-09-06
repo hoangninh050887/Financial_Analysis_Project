@@ -40,7 +40,7 @@ sheet of General Motors and Ford Motors.
 current_ratio.draw(gm_balance_sheet, f_balance_sheet)
 ```
 - This is an example of a graph that demonstrates the value of current ratio of both firms:
-![Current Ratio](./Images/Current Ratio.png)
+![Current Ratio](./Images/Current%20Ratio.png)
 
 ## Summary
 - 
