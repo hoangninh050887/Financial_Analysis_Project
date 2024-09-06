@@ -11,20 +11,20 @@ The project is organized as follows:
 
 - 'README.md': The project description.
 - 'main.py': The main Python script to run the application.
-- 'ratios.py': This file contains a class and functions for data calculation and visualization.
+- 'ratios.py': This file contains a class and Ratios for data calculation and visualization.
 - Images: The graph showing the trend of each ratio saved in this directory.
 - 'Analysis.md': An analysis of each type of financial ratio and the conclusion.
 - 'requirements.txt': Contains the list of dependencies.
 
-# Functionalities
+# Ratioalities
 - First, initiate the class `Ratio`; this class has three input data including the name of a ratio and two elements 
-for computing it. These data will be used for calculating and drawing by two functions of the `Ratio` class.
+for computing it. These data will be used for calculating and drawing by two Ratios of the `Ratio` class.
 ```commandline
-current_ratio = Function('Current Ratio', 'Current Assets', 'Current Liabilities')
+current_ratio = Ratio('Current Ratio', 'Current Assets', 'Current Liabilities')
 ```
 ### Calculating Financial Ratio
 
-- The function `calculate` is called to calculate the desired ratio. The `calculate` function take the data from the 
+- The Ratio `calculate` is called to calculate the desired ratio. The `calculate` Ratio take the data from the 
 balance sheet or the income statement of each company. In this project each ratio is computed twice, one for General 
 Motors and one for Ford Motors.
 - After calculating, the ratio of each company is added to its balance sheet.
@@ -34,7 +34,7 @@ current_ratio.caculate(f_balance_sheet)
 ```
 
 ### Plotting graph
-- The function `draw` is called for plotting the value of each ratio. The `draw` function take data from the balance
+- The Ratio `draw` is called for plotting the value of each ratio. The `draw` Ratio take data from the balance
 sheet of General Motors and Ford Motors.
 ```commandline
 current_ratio.draw(gm_balance_sheet, f_balance_sheet)
