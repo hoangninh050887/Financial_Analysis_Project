@@ -11,7 +11,7 @@ The project is organized as follows:
 
 - 'README.md': The project description.
 - 'main.py': The main Python script to run the application.
-- 'ratios.py': This file contains a class and several functions for data calculation and visualization.
+- 'ratios.py': This file contains a class and functions for data calculation and visualization.
 - Images: The graph showing the trend of each ratio saved in this directory.
 - 'Analysis.md': An analysis of each type of financial ratio and the conclusion.
 - 'requirements.txt': Contains the list of dependencies.
@@ -40,7 +40,7 @@ sheet of General Motors and Ford Motors.
 current_ratio.draw(gm_balance_sheet, f_balance_sheet)
 ```
 - This is an example of a graph that demonstrates the value of current ratio of both firms:
-![Current Ratio](Images/Current Ratio.png)
+![Current Ratio](./Images/Current Ratio.png)
 
-# Summary
-Test
+## Summary
+- 
